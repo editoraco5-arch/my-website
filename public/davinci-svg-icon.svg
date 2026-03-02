@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+    <defs>
+        <linearGradient id="davinci_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#1A1A1A" />
+            <stop offset="100%" stop-color="#000000" />
+        </linearGradient>
+        <linearGradient id="davinci_border" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#333333" />
+            <stop offset="100%" stop-color="#111111" />
+        </linearGradient>
+    </defs>
+    <!-- Background Frame -->
+    <rect x="64" y="64" width="896" height="896" rx="200" fill="url(#davinci_border)" />
+    <rect x="96" y="96" width="832" height="832" rx="168" fill="url(#davinci_bg)" />
+    
+    <!-- Outer Triangle / Ring Approximation -->
+    <path d="M512 250 L800 512 L512 770 L224 512 Z" fill="none" stroke="#E2E2E2" stroke-width="40" stroke-linejoin="round" />
+    <path d="M512 210 L840 512 L512 810 L184 512 Z" fill="none" stroke="#555555" stroke-width="20" stroke-linejoin="round" />
+    
+    <!-- Inner Color Segments -->
+    <!-- Red Segment -->
+    <path d="M512 280 L760 512 L512 512 Z" fill="#E23E3E" opacity="0.9" />
+    <!-- Blue Segment -->
+    <path d="M512 740 L760 512 L512 512 Z" fill="#3E83E2" opacity="0.9" />
+    <!-- Yellow Segment -->
+    <path d="M512 280 L264 512 L512 512 Z" fill="#E2B83E" opacity="0.9" />
+    <!-- Green Segment -->
+    <path d="M512 740 L264 512 L512 512 Z" fill="#3EE285" opacity="0.9" />
+    
+    <!-- Center Orb -->
+    <circle cx="512" cy="512" r="120" fill="#1A1A1A" stroke="#FFFFFF" stroke-width="20" />
+    <circle cx="512" cy="512" r="80" fill="#FFFFFF" opacity="0.5" />
+</svg>
