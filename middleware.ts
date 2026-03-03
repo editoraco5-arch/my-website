@@ -23,7 +23,7 @@ export default withAuth(
 export const config = {
     matcher: [
         // Course detail pages (not the listing page)
-        "/courses/:id*",
+        "/courses/:id+",
         // Student dashboard
         "/dashboard/:path*",
         // Checkout pages
